@@ -74,19 +74,28 @@ nav.badges a + a {
   margin-left: 3px;
 }
 
-.image-list {
+ul.image-list {
   overflow: hidden;
   text-align: center;
+  list-style: none;
+  column-count: 1;
 }
 
-.image-list a {
+ul.image-list li {
+  border-bottom: none;
   display: inline-block;
-  margin: 6px;
+  margin: 2px;
+  padding: 0;
 }
 
-.image-list a img {
+ul.image-list li a img {
   display: block;
   height: 64px;
+}
+
+ul#backers.image-list li a img {
+  width: 64px;
+  clip-path: inset(0, 0, 64px, 64px);
 }
 
 .faded-images {
